@@ -1,4 +1,11 @@
-.sass-cache/
-*.css.map
-*.sass.map
-*.scss.map
+.DS_Store
+.idea/
+.idea/*
+.vscode
+*.sublime*
+npm-debug.*
+
+dist/
+package-lock.json
+node_modules/
+app/css/*
