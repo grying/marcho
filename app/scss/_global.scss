@@ -1,12 +1,28 @@
-
+html,
 body{
-    color: #8d8d8d;
+    height: 100%;
+}
+body{
+    color: $dofaulr;
     font-size: 16px;
     line-height: 26px;
     @extend %quicksand-500;
+    display: flex;
+    flex-direction: column;
+}
+.main{
+    flex-grow: 1;
 }
 .container{
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+a{
+       color: $dofaulr;
+    font-size: 16px;
+    line-height: 26px;
+    @extend %quicksand-500;
+    list-style: none;
 }
