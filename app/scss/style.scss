@@ -1,5 +1,72 @@
-@import 'media';
 @import 'vars';
 @import 'fonts';
 @import 'global';
 @import 'reset';
+//header start
+//header end
+.header{
+   
+ &__inner{
+     display: flex;
+     justify-content: space-between;
+      height: 110px;
+    align-items: center;
+    
+ }
+}
+.menu{
+    text-transform: uppercase;
+    &__list{
+        display: flex;
+    }
+    &__list-item + .menu__list-item{
+        padding-left: 35px;
+
+    }
+    &__list-link{
+         color: $title;
+         transition: all .3s;
+         @extend %quicksand-400;
+         &:hover{
+             @extend %quicksand-500;
+             color: $accent;
+             border-bottom: 1px solid  $accent;
+         }
+    }
+    &__list-link--active{
+        color: $accent;
+        @extend %quicksand-500;
+        border-bottom: 1px solid  $accent;
+    }
+}
+
+.user-nav{
+    display: flex;
+    &__link{
+        position: relative;
+    }
+    &__link + .user-nav__link{
+        padding-left: 25px;
+    }
+    &__num{
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: $accent;
+        top: -9px;
+        right: -14px;
+        color: #fff;
+        font-size: 11px;
+        text-align: center;
+        line-height: 20px;
+     }
+}
+    
+//header end
+
+
+
+
+
+@import 'media';

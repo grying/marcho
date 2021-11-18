@@ -1,4 +1,12 @@
 
 body{
-    
+    color: #8d8d8d;
+    font-size: 16px;
+    line-height: 26px;
+    @extend %quicksand-500;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
