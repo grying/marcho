@@ -26,16 +26,17 @@
     &__list-link{
          color: $title;
          transition: all .3s;
-         @extend %quicksand-400;
+         padding-bottom: 0 2px 1px;
+         @extend %roboto-400;
          &:hover{
-             @extend %quicksand-500;
+             @extend %roboto-700;
              color: $accent;
              border-bottom: 1px solid  $accent;
          }
     }
     &__list-link--active{
         color: $accent;
-        @extend %quicksand-500;
+        @extend %roboto-700;
         border-bottom: 1px solid  $accent;
     }
 }
@@ -140,7 +141,7 @@
     &__accept-img{
     display: inline;
     margin-left: 25px;
-    vertical-align: middle
+    vertical-align: middle  
     }
 }
 
