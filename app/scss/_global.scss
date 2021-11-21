@@ -35,7 +35,11 @@ a{
     text-transform: uppercase;
 }
 .text{
+    display: flex;
+    justify-content: center;
     text-align: center;
     max-width: 570px;
-    margin: 0 auto 55 px;
+    margin: 0 auto ;
+    margin-bottom: 55px;
+    vertical-align: middle;
 }
