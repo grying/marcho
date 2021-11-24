@@ -19,6 +19,7 @@ body{
     padding: 0 15px;
 }
 
+
 a{
        color: $dofaulr;
     font-size: 16px;
@@ -42,4 +43,52 @@ a{
     margin: 0 auto ;
     margin-bottom: 55px;
     vertical-align: middle;
+}
+
+.breadcrumbs{
+    display: inline-flex;
+    justify-content: center;
+    padding-left: 25px;
+    position: relative;
+    &::before{
+        content: "";
+        background-image: url('../images/icon/home.svg');
+        height: 16px;
+        width: 16px;
+        left: 0;
+        top: 4px;
+        position: absolute;
+    }
+    &__list{
+        display: flex;
+    }
+    &__item{
+        color: #727272;
+        padding-right: 40px;
+       
+        position: relative;
+        &::after{
+            content: "";
+            position: absolute;
+            background-image: url('../images/icon/angle-right.svg');
+            width: 9px;
+            height: 10px;
+            right: 15px;
+            top: 9px;
+        }
+        
+        &:last-child{
+            color: $accent ;
+            padding-right: 0;
+            &::after{
+                display: none;
+            }
+        }
+    }
+    &__link{
+        color: inherit;
+    }
+}
+.header--404-page{
+    background-color: $bg;
 }

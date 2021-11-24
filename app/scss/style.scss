@@ -141,6 +141,25 @@
     }
 }
 //footer end
+
+//top start
+.top{
+    &__container{
+    max-width: 1700px;
+    margin: 0 auto;
+    padding: 0 15px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    padding: 120px 0 130px;
+    text-align: center;
+    }
+
+    //@extend %roboto-400;
+}
+
+//top end
+
 //top-slider start
 
 .top-slider{
@@ -560,10 +579,7 @@
             color: $title;
         }
     }
-    &__text{
-        // font-size: 48px;
-        // @extend %roboto-400;
-    }
+  
     &__link{
         text-transform: uppercase;
         color: $title;
@@ -581,9 +597,177 @@
             justify-content: space-between;
             align-items: center;
         }
- }
-
+}
 //promo end
+
+//blog start
+
+.blog{
+    margin: 100px 0 163px;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+
+    &__items{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item{
+        max-width: 370px;
+         border: 1px solid #ececec;
+        border-top: none;
+    }
+    &__item-info{
+       padding: 15px 35px 25px ;
+    }
+    &__item-person{
+        display: flex;
+    }
+    &__item-author,
+    &__item-data{
+        position: relative;
+        padding-left: 30px;
+        margin-bottom: 15px;
+        &::before{
+            position: absolute;
+            content: "";
+            width: 20px;
+            height: 20px;
+            background-image: url('../images/icon/user.svg');
+        }
+    }
+    &__item-author{
+        &::before{
+            content: "";
+            background-image: url('../images/icon/user.svg');
+            left: 0;
+            top: 2px;
+           
+        }
+    }
+    &__item-data{
+        margin-left: 30px;
+        &::before{
+            content: "";
+            background-image: url('../images/icon/clock.svg');
+            left: 0;
+            top: 0;
+        }
+    }
+    &__item-title{
+        color: $title;
+        font-size: 22px;
+        line-height: 32px;
+        @extend %roboto-400;
+        margin-bottom: 15px;
+    }
+    &__item-link{
+        padding-right: 16px;
+        position: relative;
+        transition: all .3s;
+        &:hover{      
+            color: $accent;
+        }   
+    }    
+    &__item-link:hover{
+        path{
+            fill:salmon;
+        }
+    } 
+}
+
+//blog end
+
+//modal start
+
+.modal{
+    padding-top: 100px;
+    max-width: 570px;
+    margin: 0 auto 115px;
+    &__links{
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    &__link{
+        @extend %roboto-400;
+        color: #909090;
+        font-size: 22px;
+        text-transform: uppercase;
+        margin: 0 30px;
+    }
+    &__link--active{
+        color: $accent;
+    }
+    &__labe{
+        margin-bottom: 30px;
+        display: block; 
+    }
+    &__input{
+        display: block;
+        width: 100%;
+        border:none;
+        background-color: $bg;
+        height: 60px;
+        margin-top: 4px;
+        padding: 0 15px;
+    }
+    &__btn{
+        display: block;
+        background-color: $title;
+        color: #fff;
+        text-transform: uppercase;
+        @extend %roboto-400;
+        padding: 14px 0;
+        width: 100%;
+        border:none;
+        cursor: pointer;
+    }
+    &__error{
+        margin-top: 12px;
+        color: $accent;
+        display: inline-block;
+    }
+    &__text{
+        margin-bottom: 25px;
+    }
+}
+//modal end
+
+//page-404 star
+
+.page-404{
+    padding: 110px 0 120px;
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__content{
+        max-width: 570px;
+        width: 100%;
+    }
+    &__title{
+        @extend %roboto-700;
+        font-size: 48px;
+        color: #28384f;
+        margin-bottom: 40px;
+    }
+    &__text{
+        margin-bottom: 55px;
+        max-width: 470px;
+    }
+    &__link{
+        background-color: $accent;
+        text-transform: uppercase;
+        color: #fff;
+        padding: 14px 35px;
+        @extend %roboto-400;
+        background-color: $accent;
+        box-shadow: 0px 7px 20px 0px rgba(255, 17, 48, 0.3);
+    }
+}
+
+//page-404 end
+
 
 
 
