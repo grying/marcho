@@ -31,8 +31,15 @@ $bg: #f6f6f6;
 }
 
 %text{
-          text-align: center;
-        max-width: 550px;
-        margin: 0 auto;
-        margin-bottom: 50px;
+   text-align: center;
+   max-width: 550px;
+   margin: 0 auto;
+   margin-bottom: 50px;
+}
+%checbox-hidden{
+   font-size: 0;
+   display: none;
+   width: 0px;
+   height: 0px;
+   clip:rect(0 0 0 0);
 }
