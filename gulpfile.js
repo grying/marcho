@@ -31,7 +31,7 @@ gulp.task('script', function(){
  .pipe(uglify())
  .pipe(gulp.dest('app/js'))
 });
-
+ 
 gulp.task('style', function(){
     return gulp.src([
         'node_modules/normalize.css/normalize.css',
@@ -40,6 +40,7 @@ gulp.task('style', function(){
         'node_modules/rateyo/src/jquery.rateyo.css',
         'node_modules/ion-rangeslider/css/ion.rangeSlider.css',
         'node_modules/jquery-form-styler/dist/jquery.formstyler.css',
+       
         'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css'
     ])
     .pipe(concat('libs.min.css'))
