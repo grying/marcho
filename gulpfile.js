@@ -5,12 +5,22 @@ let autoprefixer= require('gulp-autoprefixer')
 let browserSync=require('browser-sync')
 let concat= require('gulp-concat');
 let uglify = require('gulp-uglify')
+let gulpnuNjucksRender = require('gulp-nunjucks-render')
 let cssmin =require('gulp-cssmin')
+
+
+gulp.task('gulpnuNjucksRender',function (){
+    return gulp.src('app/*.njk')
+        .pipe(gulpnuNjucksRender())
+        .pipe(gulp.dest('app/'))
+    gulp.watch('app/*.njk', gulp.parallel('gulpnuNjucksRender'))
+})
 
 gulp.task('sass', function(){ 
     return  gulp.src('app/scss/*.scss')
     .pipe(sass({outputStyle: 'compressed'}))
     .pipe(rename({suffix : '.min'}))
+   
     .pipe(autoprefixer({
         overrideBrowserslist: ['last 8 versions']
     }))
@@ -53,15 +63,17 @@ gulp.task('html', function(){
         .pipe(browserSync.reload({stream : true}))
 });
 
+
 gulp.task('js', function(){
     return gulp.src('app/js/*.js')
         .pipe(browserSync.reload({stream : true}))
 });
 
+
 gulp.task('browser-sync', function() {
     browserSync.init({
         server: {
-            baseDir: "app/"
+            baseDir: "app/",
         }
     });
 });
@@ -69,8 +81,9 @@ gulp.task('browser-sync', function() {
 gulp.task('watch', function(){
     gulp.watch('app/scss/*.scss', gulp.parallel('sass'))
     gulp.watch('app/*.html', gulp.parallel('html'))
+    gulp.watch('app/*.njk', gulp.parallel('gulpnuNjucksRender'))
     gulp.watch('app/js/*.js', gulp.parallel('js'))
 });
 
-gulp.task('default',gulp.parallel('style','script','watch','sass','browser-sync'))
+gulp.task('default', gulp.parallel('style',  'script', 'watch', 'sass', 'browser-sync','gulpnuNjucksRender'))
 

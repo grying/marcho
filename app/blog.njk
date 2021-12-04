@@ -7,51 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/libs.min.css">
-    <link rel="stylesheet" href="css/blog-one.min.css">
+    <link rel="stylesheet" href="css/blog.min.css">
 </head>
 
 <body>
-    <header class="header">
-    <div class="container">
-        <div class="header__inner">
-            <a class="logo" href="#">
-                <img src="images/logo.png" alt="logo" class="logo__img">
-            </a>
-            <nav class="menu">
-                <ul class="menu__list">
-                    <li class="menu__list-item"><a class="menu__list-link menu__list-link--active" href="#">home</a>
-                    </li>
-                    <li class="menu__list-item"><a class="menu__list-link" href="#">shop</a></li>
-                    <li class="menu__list-item"><a class="menu__list-link" href="#">page</a></li>
-                    <li class="menu__list-item"><a class="menu__list-link" href="#">blog</a></li>
-                    <li class="menu__list-item"><a class="menu__list-link" href="#">contact</a></li>
-                </ul>
-            </nav>
-
-            <div class="user-nav">
-                <a class="user-nav__link" href="#">
-                    <img src="images/icon/user.svg" alt="user icon" class="user-nav__link-img">
-                </a>
-                <a class="user-nav__link" href="#">
-                    <img src="images/icon/search.svg" alt="user icon" class="user-nav__link-img">
-                </a>
-                <a class="user-nav__link" href="#">
-                    <img src="images/icon/cart.svg" alt="user icon" class="user-nav__link-img">
-                    <span class="user-nav__num">3</span>
-                </a>
-                <a class="user-nav__link" href="#">
-                    <img src="images/icon/heart.svg" alt="user icon" class="user-nav__link-img">
-                    <span class="user-nav__num">7</span>
-                </a>
-            </div>
-        </div>
-    </div>
-</header>
-   
+    {% include 'app/module/_header/_header.html' %}
+    
     <main class="main">
         <div class="section__top">
             <div class="top__container" style=" background-image: url('images/breadcrumbs-bog.jpg');">
-                <h2 class="top__title title">BLOG DETAILS</h2>
+                <h2 class="top__title title">BLOG STANDARD</h2>
                 <div class="breadcrumbs">
                     <ul class="breadcrumbs__list">
                         <li class="breadcrumbs__item">
@@ -61,196 +26,124 @@
                         </li>
                         <li class="breadcrumbs__item">
                             <span class="breadcrumbs__link" href="#">
-                                Blog one
+                                Blog page
                             </span>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
-        <section class="blogs blog-one">
+        <section class="blogs">
             <div class="container">
                 <div class="blogs__inner">
                     <div class="blogs__inner">
-                        <div class="blogs__content  blog-one__content">
-                            <img class="blogs__item-img" src="images/blog/page/1.jpg" alt="blog-page">
-                            <div class="blog-one__text">
-                                <ul class="blog-one__info">
-                                    <li class="blog-one__info-item">
-                                        <span class="blog-one__info-link" href="#">
-                                            16 February, 2020
-                                        </span>
-                                    </li>
-                                    <li class="blog-one__info-item ">
-                                        <a class="blog-one__info-link blog-one__info-link--coment" href="#">
-                                            3 comments
+                        <div class="blogs__content">
+
+                            <div class="blogs__item">
+                                <a class="blogs__item-link" href="#">
+                                    <img class="blogs__item-img" src="images/blog/page/1.jpg" alt="blog-page">
+                                </a>
+                                <div class="blogs__item-box">
+                                    <h4 class="blogs__item-title">
+                                        <a class="blogs__item-link" href="#">
+                                            Be prepared to sweat a lot, but at least in the Southern regions there’s a
+                                            good
+                                            chance you’ll get to enjoy!
                                         </a>
-                                    </li>
-                                    <li class="blog-one__info-item">
-                                        <a class="blog-one__info-link blog-one__info-link--author" href="#">
-                                            By Admin
+                                    </h4>
+
+                                    <div class="blog-box">
+                                        <a class="blog-box__author" href="#">By Admin</a>
+                                        <div class=" blog-box__data">10 January, 2020</div>
+                                    </div>
+
+                                    <p class="blogs__item-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna
+                                        aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodoami viverra
+                                        maycenas acchmsan lacus vel facilisis.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="blogs__item">
+                                <a class="blogs__item-link" href="#">
+                                    <img class="blogs__item-img" src="images/blog/page/2.jpg" alt="blog-page">
+                                </a>
+                                <div class="blogs__item-box">
+                                    <h4 class="blogs__item-title">
+                                        <a class="blogs__item-link" href="#">
+                                            Be prepared to sweat a lot, but at least in the Southern regions there’s a
+                                            good
+                                            chance you’ll get to enjoy!
                                         </a>
-                                    </li>
-                                </ul>
-                                <h4>In Particular The Global World Of Lorem Ipsum Asap Tempor</h4>
-                                <p>Lorem ipsum dolor siit amet, consectetur adiscing elit, sed do eiusmod tempor
-                                    incididunt more utmm labore et dolore
-                                    magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo ecenas
-                                    accumsan lacus vel facilisis. Quis ipsum
-                                    suspenidisse ultrices gravida. Risus comdouma viverra more maecenas accumsan
-                                    lacus vel facilisis.</p>
-                                <blockquote>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elt, sed does eiusmod tempor
-                                    incididunt ut labore et dolore magna
-                                    aliqua dilo. Quis ipsum suspendisse ultrices gravida.
-                                </blockquote>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt of in utmm labore et dolore
-                                    magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo ecenas
-                                    accumsan lacus vel facilisis. Quis ipsum
-                                    suspendisse ultrices gravida. Risus comdoumar viverra more maecenas accumsan
-                                    lacus vel facilisis.
-                                </p>
+                                    </h4>
 
-
-                                <img class="blog-one__left-img" src="images/blog/blog-one.jpg" alt="">
-                                <p>Lorem ipsum dolor sit amet, consectur picing elit, sed do eusmod tempor
-                                    incididunt ut mor more labore a doore magna
-                                    aliqua. Quis into ipsum the suspendisse ultrices grda. Lorem in ipsum dolor sit
-                                    amet, consectetur adipiscings elit, sed
-                                    does eiusmod tempor incididunt mod labore et dolore magna aliqua. Quis ipsum in
-                                    suspendisse fass a ultrices gravida.
-                                    Loremon ipsum dolor st amaiet, consectetur aipiscinge elit, sed do eiusobimod
-                                    tempor incididunt uts labore et doloroe
-                                    gravida.</p>
-                            </div>
-
-                            <div class="blog-one__box">
-                                <div class="blog-one__tags">
-                                    <span>TAGS:</span>
-                                    <a href="#">Fashion</a>,
-                                    <a href="#">Style</a>
-                                </div>
-                                <div class="blog-one__share">
-                                    <span>share:</span>
-                                    <a href="#">
-                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="17" height="16"
-                                            viewBox="0 0 512 512">
-                                            <title></title>
-                                            <g id="icomoon-ignore">
-                                            </g>
-                                            <path
-                                                d="M512 113.2c-18.8 8.4-39.1 14-60.3 16.5 21.7-13 38.3-33.6 46.2-58.1-20.3 12-42.8 20.8-66.7 25.5-19.2-20.4-46.5-33.1-76.7-33.1-58 0-105 47-105 105 0 8.2 0.9 16.2 2.7 23.9-87.3-4.4-164.7-46.2-216.5-109.8-9 15.5-14.2 33.6-14.2 52.8 0 36.4 18.5 68.6 46.7 87.4-17.2-0.5-33.4-5.3-47.6-13.1 0 0.4 0 0.9 0 1.3 0 50.9 36.2 93.4 84.3 103-8.8 2.4-18.1 3.7-27.7 3.7-6.8 0-13.3-0.7-19.8-1.9 13.4 41.7 52.2 72.1 98.1 73-36 28.2-81.2 45-130.5 45-8.5 0-16.8-0.5-25.1-1.5 46.6 29.9 101.8 47.2 161.1 47.2 193.2 0 298.9-160.1 298.9-298.9 0-4.6-0.1-9.1-0.3-13.6 20.5-14.7 38.3-33.2 52.4-54.3z">
-                                            </path>
-                                        </svg>
-                                    </a>
-                                    <a href="#">
-                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="17" height="16"
-                                            viewBox="0 0 512 512">
-                                            <title></title>
-                                            <g id="icomoon-ignore">
-                                            </g>
-                                            <path
-                                                d="M512 113.2c-18.8 8.4-39.1 14-60.3 16.5 21.7-13 38.3-33.6 46.2-58.1-20.3 12-42.8 20.8-66.7 25.5-19.2-20.4-46.5-33.1-76.7-33.1-58 0-105 47-105 105 0 8.2 0.9 16.2 2.7 23.9-87.3-4.4-164.7-46.2-216.5-109.8-9 15.5-14.2 33.6-14.2 52.8 0 36.4 18.5 68.6 46.7 87.4-17.2-0.5-33.4-5.3-47.6-13.1 0 0.4 0 0.9 0 1.3 0 50.9 36.2 93.4 84.3 103-8.8 2.4-18.1 3.7-27.7 3.7-6.8 0-13.3-0.7-19.8-1.9 13.4 41.7 52.2 72.1 98.1 73-36 28.2-81.2 45-130.5 45-8.5 0-16.8-0.5-25.1-1.5 46.6 29.9 101.8 47.2 161.1 47.2 193.2 0 298.9-160.1 298.9-298.9 0-4.6-0.1-9.1-0.3-13.6 20.5-14.7 38.3-33.2 52.4-54.3z">
-                                            </path>
-                                        </svg>
-                                    </a>
-                                    <a href="#">
-                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="17" height="16"
-                                            viewBox="0 0 512 512">
-                                            <title></title>
-                                            <g id="icomoon-ignore">
-                                            </g>
-                                            <path
-                                                d="M512 113.2c-18.8 8.4-39.1 14-60.3 16.5 21.7-13 38.3-33.6 46.2-58.1-20.3 12-42.8 20.8-66.7 25.5-19.2-20.4-46.5-33.1-76.7-33.1-58 0-105 47-105 105 0 8.2 0.9 16.2 2.7 23.9-87.3-4.4-164.7-46.2-216.5-109.8-9 15.5-14.2 33.6-14.2 52.8 0 36.4 18.5 68.6 46.7 87.4-17.2-0.5-33.4-5.3-47.6-13.1 0 0.4 0 0.9 0 1.3 0 50.9 36.2 93.4 84.3 103-8.8 2.4-18.1 3.7-27.7 3.7-6.8 0-13.3-0.7-19.8-1.9 13.4 41.7 52.2 72.1 98.1 73-36 28.2-81.2 45-130.5 45-8.5 0-16.8-0.5-25.1-1.5 46.6 29.9 101.8 47.2 161.1 47.2 193.2 0 298.9-160.1 298.9-298.9 0-4.6-0.1-9.1-0.3-13.6 20.5-14.7 38.3-33.2 52.4-54.3z">
-                                            </path>
-                                        </svg>
-                                    </a>
-                                    <a href="#">
-                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="17" height="16"
-                                            viewBox="0 0 512 512">
-                                            <title></title>
-                                            <g id="icomoon-ignore">
-                                            </g>
-                                            <path
-                                                d="M512 113.2c-18.8 8.4-39.1 14-60.3 16.5 21.7-13 38.3-33.6 46.2-58.1-20.3 12-42.8 20.8-66.7 25.5-19.2-20.4-46.5-33.1-76.7-33.1-58 0-105 47-105 105 0 8.2 0.9 16.2 2.7 23.9-87.3-4.4-164.7-46.2-216.5-109.8-9 15.5-14.2 33.6-14.2 52.8 0 36.4 18.5 68.6 46.7 87.4-17.2-0.5-33.4-5.3-47.6-13.1 0 0.4 0 0.9 0 1.3 0 50.9 36.2 93.4 84.3 103-8.8 2.4-18.1 3.7-27.7 3.7-6.8 0-13.3-0.7-19.8-1.9 13.4 41.7 52.2 72.1 98.1 73-36 28.2-81.2 45-130.5 45-8.5 0-16.8-0.5-25.1-1.5 46.6 29.9 101.8 47.2 161.1 47.2 193.2 0 298.9-160.1 298.9-298.9 0-4.6-0.1-9.1-0.3-13.6 20.5-14.7 38.3-33.2 52.4-54.3z">
-                                            </path>
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="blog-one__author">
-                                <img class="blog-one__author-img" src="images/avatar/author.jpg" alt="">
-                                <div class="blog-one__author-info">
-                                    <h5 class="blog-one__author-title">
-                                        JHON DOE
-                                    </h5>
-                                    <p class="blog-one__author-text">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo
-                                        dajsna for tempor incididunt ut labore et dolore
-                                        magna aliqua. Quis ipsum more in the a mo spendisse ultrices gravida. Risus
-                                        commodo.
-                                    </p>
-                                </div>
-                            </div>
-
-
-                            <div class="commerts-title">
-                                O2 COMMENTS
-                            </div>
-                            <div class="comments">
-                                <img class="comments__img" src="images/avatar/1.jpg" alt="avatar">
-                                <div class="comments__content">
-                                    <div class="comments__content-top">
-                                        <p class="comments__content-name">Michle Jhon</p>
-                                        <p class="comments__content-date">2 days ago</p>
-
+                                    <div class="blog-box">
+                                        <a class="blog-box__author" href="#">By Admin</a>
+                                        <div class=" blog-box__data">10 January, 2020</div>
                                     </div>
-                                    <p class="comments__content-text">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                        tempor incididunt ut labore et dolore magna
-                                        aliqua. Qus ipsum speissei ultrices gravida. Risus commodo viverra maeenas
-                                        accumsan lacus vel facilisis.
+
+                                    <p class="blogs__item-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna
+                                        aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodoami viverra
+                                        maycenas acchmsan lacus vel facilisis.
                                     </p>
-                                    <a class="comments__content-reply" href="#">
-                                        Reply
-                                    </a>
                                 </div>
                             </div>
-                            <div class="comments">
-                                <img class="comments__img" src="images/avatar/3.jpg" alt="avatar">
-                                <div class="comments__content">
-                                    <div class="comments__content-top">
-                                        <p class="comments__content-name">Michle Jhon</p>
-                                        <p class="comments__content-date">2 days ago</p>
+                            <div class="blogs__item blogs__item--slider">
+                                <div class="blogs__slider">
+                                    <img class="blogs__item-img" src="images/blog/page/1.jpg" alt="blog-page">
+                                    <img class="blogs__item-img" src="images/blog/page/2.jpg" alt="blog-page">
+                                    <img class="blogs__item-img" src="images/blog/page/3.jpg" alt="blog-page">
+                                </div>
+                                <div class="blogs__item-box">
+                                    <h4 class="blogs__item-title">
+                                        <a class="blogs__item-link" href="#">
+                                            Be prepared to sweat a lot, but at least in the Southern regions there’s a
+                                            good
+                                            chance you’ll get to enjoy!
+                                        </a>
+                                    </h4>
 
+                                    <div class="blog-box">
+                                        <a class="blog-box__author" href="#">By Admin</a>
+                                        <div class=" blog-box__data">10 January, 2020</div>
                                     </div>
-                                    <p class="comments__content-text">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                        tempor incididunt ut labore et dolore magna
-                                        aliqua. Qus ipsum speissei ultrices gravida. Risus commodo viverra maeenas
-                                        accumsan lacus vel facilisis.
+
+                                    <p class="blogs__item-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna
+                                        aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodoami viverra
+                                        maycenas acchmsan lacus vel facilisis.
                                     </p>
-                                    <a class="comments__content-reply" href="#">
-                                        Reply
-                                    </a>
+                                </div>
+                            </div>
+                            <div class="blogs__item blogs__item--no-image">
+
+                                <div class="blogs__item-box">
+                                    <h4 class="blogs__item-title">
+                                        <a class="blogs__item-link" href="#">
+                                            Be prepared to sweat a lot, but at least in the Southern regions there’s a
+                                            good
+                                            chance you’ll get to enjoy!
+                                        </a>
+                                    </h4>
+
+                                    <div class="blog-box">
+                                        <a class="blog-box__author" href="#">By Admin</a>
+                                        <div class=" blog-box__data">10 January, 2020</div>
+                                    </div>
+
+                                    <p class="blogs__item-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna
+                                        aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodoami viverra
+                                        maycenas acchmsan lacus vel facilisis.
+                                    </p>
                                 </div>
                             </div>
 
-
-                            <form class="comments-form" action="#">
-                                <p class="blog-one__form-title">
-                                    LEAVE A REPLY
-                                </p>
-                                <div class="comments-form__box-input">
-                                    <input class="comments-form__text-input" placeholder="Your name" type="text">
-                                    <input class="comments-form__text-input" placeholder="E-mail address" type="text">
-                                </div>
-                                <textarea class="comments-form__textarea" placeholder="Your text here"></textarea>
-                                <button class="comments-form__btn" type="submit">POST COMMENT</button>
-                            </form>
                         </div>
                         <div class="blogs__aside">
                             <div class="filter-search filter__item">
@@ -497,63 +390,7 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
-    <div class="container">
-
-
-        <div class="footer-top">
-            <div class="footer-top__item footer-top__contact">
-                <a class="logo footer-top__logo" href="#">
-                    <img src="images/logo.png" alt="logo" class="logo__img">
-                </a>
-                <a class="footer-top__adress" href="#">No. 342 - London Oxford Street,
-                    012 United States</a>
-                <a class="footer-top__email" href="#">Youremail@gmail.com</a>
-                <a class="footer-top__phone" href="tel:02838388393">+0283 838 8393</a>
-
-            </div>
-            <div class="footer-top__item  footer-top__nav">
-                <h6 class="footer-top__title">Useful Links</h6>
-                <ul class="footer-top__list">
-                    <li class="footer-top__item"><a class="footer-top__link" href="#"> About Us</a></li>
-                    <li class="footer-top__item"><a class="footer-top__link" href="#">Privacy Policy</a></li>
-                    <li class="footer-top__item"><a class="footer-top__link" href="#">Terms & Conditions</a></li>
-                    <li class="footer-top__item"><a class="footer-top__link" href="#">Contact Us</a></li>
-                    <li class="footer-top__item"><a class="footer-top__link" href="#">Help & Support</a></li>
-                </ul>
-            </div>
-            <div class="footer-top__item footer-top__nav">
-                <h6 class="footer-top__title">My Account</h6>
-                <li class="footer-top__item"><a class="footer-top__link" href="#">My Account </a></li>
-                <li class="footer-top__item"><a class="footer-top__link" href="#"> My Cart</a></li>
-                <li class="footer-top__item"><a class="footer-top__link" href="#">My WIshlist</a></li>
-                <li class="footer-top__item"><a class="footer-top__link" href="#">Registration</a></li>
-                <li class="footer-top__item"><a class="footer-top__link" href="#">Check Out</a></li>
-
-            </div>
-            <div class="footer-top__item footer-top__item-form ">
-                <h6 class="footer-top__title">Subscribe Our Newsletter</h6>
-                <p class="footer-top__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna
-                    aliqua. Quis ipsum suspendisse ultrices gravida.</p>
-
-                <form class="footer-top__form">
-                    <input type="email" class="footer-top__form-input " placeholder="Your email address" required>
-                    <button class="footer-top__form-btn" type="submit">Subscribe</button>
-                </form>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p class="footer-bottom__copy">© 2019 CodeAstrology. All Rights Reserved.</p>
-            <div class="footer-bottom__accept">
-                We Accept
-                <img src="images/icon/mastercard.png" alt="we accept" class="footer-bottom__accept-img">
-                <img src="images/icon/visa.png" alt="we accept" class="footer-bottom__accept-img">
-                <img src="images/icon/paypal.png" alt="we accept" class="footer-bottom__accept-img">
-            </div>
-        </div>
-    </div>
-</footer>
+    {% include 'app/module/_footer/_footer.html' %}
 
 
 
