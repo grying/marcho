@@ -8,7 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/product.min.css">
-    <link rel="stylesheet" href="node_modules/jquery-form-styler/dist/jquery.formstyler.theme.css">
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
@@ -19,19 +19,43 @@
                 <img src="images/logo.png" alt="logo" class="logo__img">
             </a>
             <nav class="menu">
+                <button class="menu__btn">
+                    <span></span>
+                </button>
                 <ul class="menu__list">
-                    <li class="menu__list-item"><a class="menu__list-link menu__list-link--active" href="#">home</a>
+                    <li class="menu__list-item">
+                        <a class="menu__list-link menu__list-link--active" href="#">home</a>
                     </li>
-                    <li class="menu__list-item"><a class="menu__list-link" href="#">shop</a></li>
-                    <li class="menu__list-item"><a class="menu__list-link" href="#">page</a></li>
-                    <li class="menu__list-item"><a class="menu__list-link" href="#">blog</a></li>
-                    <li class="menu__list-item"><a class="menu__list-link" href="#">contact</a></li>
+                    <li class="menu__list-item">
+                        <a class="menu__list-link" href="#">shop</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a class="menu__list-link" href="#">page</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a class="menu__list-link" href="#">blog</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a class="menu__list-link" href="#">contact</a>
+                    </li>
                 </ul>
             </nav>
-
             <div class="user-nav">
                 <a class="user-nav__link" href="#">
-                    <img src="images/icon/user.svg" alt="user icon" class="user-nav__link-img">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20">
+                        <defs>
+                            <style>
+                                .cls-1 {
+                                    fill: #29282d;
+                                    fill-rule: evenodd;
+                                }
+                            </style>
+                        </defs>
+                        <path
+                            class="cls-1"
+                            d="M1232.07,6018.93a9.954,9.954,0,0,0-3.8-2.39,5.78,5.78,0,1,0-6.54,0A10.04,10.04,0,0,0,1215,6026h1.56a8.44,8.44,0,0,1,16.88,0H1235A9.932,9.932,0,0,0,1232.07,6018.93Zm-11.29-7.15A4.22,4.22,0,1,1,1225,6016,4.221,4.221,0,0,1,1220.78,6011.78Z"
+                            transform="translate(-1215 -6006)"/>
+                    </svg>
                 </a>
                 <a class="user-nav__link" href="#">
                     <img src="images/icon/search.svg" alt="user icon" class="user-nav__link-img">
@@ -113,7 +137,7 @@
                                 </div>
                                 <div class="product-one__item-star">
                                     <div class="star" data-rateyo-rating="4"></div>
-                                    <span>(22222)</span>
+                                    <span>(22)</span>
                                 </div>
                             </div>
                             <p class="product-one__item-text">

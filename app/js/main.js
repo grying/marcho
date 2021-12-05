@@ -1,4 +1,10 @@
 $(function () {
+   $('.shop__filter-btn').on('click', function () {
+      $('.shop__filters').slideToggle();
+   });
+   $('.menu__btn').on('click', function () {
+      $('.menu__list').toggleClass('menu__list--active')   
+   });
    $('.blogs__slider').slick({
       nextArrow: '<button type="button" class="slick-prev"><svg xmlns="http://www.w3.org/2000/svg"  width="9px" height="14px" viewBox="0 0 9 14" version="1.1"><g id="surface1"><path  d="M 8.027344 7.464844 L 2.5625 12.777344 C 2.300781 13.035156 1.871094 13.035156 1.609375 12.777344 L 0.972656 12.160156 C 0.707031 11.902344 0.707031 11.488281 0.96875 11.230469 L 5.300781 7 L 0.96875 2.769531 C 0.707031 2.511719 0.707031 2.097656 0.972656 1.839844 L 1.609375 1.222656 C 1.871094 0.964844 2.300781 0.964844 2.5625 1.222656 L 8.027344 6.535156 C 8.292969 6.792969 8.292969 7.207031 8.027344 7.464844 Z M 8.027344 7.464844 "/></g></svg>  </button>',
       prevArrow: '<button type="button" class="slick-next">   <svg  xmlns = "http://www.w3.org/2000/svg"  width = "9px"height = "14px" viewBox = "0 0 9 14" version = "1.1" > <g id="surface1"><path d="M 0.972656 6.535156 L 6.4375 1.222656 C 6.699219 0.964844 7.128906 0.964844 7.390625 1.222656 L 8.027344 1.84375 C 8.292969 2.097656 8.292969 2.511719 8.03125 2.769531 L 3.699219 7 L 8.03125 11.230469 C 8.292969 11.488281 8.292969 11.902344 8.027344 12.160156 L 7.390625 12.777344 C 7.128906 13.035156 6.699219 13.035156 6.4375 12.777344 L 0.972656 7.464844 C 0.707031 7.207031 0.707031 6.792969 0.972656 6.535156 Z M 0.972656 6.535156 " /></g></svg></button>',
@@ -10,7 +16,7 @@ $(function () {
       $(this).addClass('product-tabs__top-item--active');
       $('.product-tabs__content-item').removeClass('product-tabs__content-item--active');
       $($(this).attr('href')).addClass('product-tabs__content-item--active');
-   })
+   });
    $(".product-slide__thumb").slick({
       asNavFor: '.product-slide__big',
       focusOnSelect: true,
@@ -24,16 +30,27 @@ $(function () {
       draggable: false,
       arrows: false,
       fade: true,
-   })
+       responsive:[
+         {
+            breakpoint: 1051,
+            settings:{
+               draggable: true,
+            }
+         },
+      ]
+   });
+
    $(".shop-content__filter-btn").on('click', function () {
       $(".shop-content__filter-btn").removeClass('shop-content__filter-btn--active');
       $(this).addClass('shop-content__filter-btn--active');
    });
    $('.button-list').on('click', function () {
       $('.product-item').addClass('product-item--list');
+      $('.shop-content__inner').addClass('shop-content__nogrid');
    });
    $('.button-grid').on('click', function () {
       $('.product-item').removeClass('product-item--list');
+      $('.shop-content__inner').removeClass('shop-content__nogrid');
    });
 
    $(".filter-price__input").ionRangeSlider({

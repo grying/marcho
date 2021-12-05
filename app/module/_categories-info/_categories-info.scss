@@ -1,7 +1,8 @@
 .categories-info{
-    padding: 120px 0;
+    
     background-image: url('../images/decor/categor-left.png');
     background-repeat: no-repeat;
+
     
     background-position: center left ;
   
@@ -17,6 +18,7 @@
     margin-bottom: 110px;
     position: relative;
     z-index: 12;
+    margin-top: 120px;
     &::before,
      &::after{
         content: "";
@@ -115,3 +117,101 @@
         transition: all .2s;
     }
 }
+@media (max-width:1235px){
+    .info{
+       &::after,
+       &::before{
+           right: 0;
+       }
+        &__item{
+            width: 340px;
+            padding: 20px;
+        }
+    }
+}
+@media (max-width:1100px){
+    .info{
+        display: block;
+        &__item{
+            width: 100%;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        &__item-title{
+            margin-bottom: 10px;
+        }
+    }
+    .categories{
+        &__items{
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(2,1fr);
+            // grid-template-rows: repeat(2,1fr);
+        }
+        &__item{    
+            background-position: center top;
+            &:nth-child(1){
+                grid-row: auto;
+            }
+               &:nth-child(2){
+                background-position: center right;
+                grid-column: auto;
+                
+            }
+               &:nth-child(1){
+                grid-row: auto;
+            }   &:nth-child(1){
+                grid-row: auto;
+            }
+
+        }
+    }
+}
+@media (max-width:768px){
+    .categories{
+        &__items{
+            min-height: 385px;
+        }
+        &__item{
+            background-image: none !important;
+            justify-content: center;
+            padding-left: 15px;
+            padding-top: 0;
+            display: flex;
+            flex-direction: column;
+            &:nth-child(1){
+                background-color: #f4dff0;
+            }
+            &:nth-child(2){
+                background-color: #d7efef;
+            }
+            &:nth-child(3){
+                background-color: #fff6a7;
+            }
+            &:nth-child(4){
+                background-color: #dbd7f1;
+            }
+        }
+    }
+}
+@media (max-width:620px){
+    
+    .categories{
+        grid-gap: 10px;
+        &__items{
+            grid-template-columns: repeat(1,1fr);
+        } 
+    &__item{
+        padding: 15px 10px;
+    }
+    }
+   
+}
+@media (max-width:375px){
+    .info{
+        &__item-title{
+            font-size: 20px;
+        }
+    }
+}
+
+
