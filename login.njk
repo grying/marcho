@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/login.min.css">
+</head>
+
+<body>
+    {% include 'app/module/_header/_header.html' %}
+    
+    <main class="main">
+        <div class="section__top">
+            <div class="top__container" style=" background-image: url('images/breadcrumbs-bog.jpg');">
+                <h2 class="top__title title">Log in</h2>
+                <div class="breadcrumbs">
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link" href="#">
+                                Home
+                            </a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <span class="breadcrumbs__link" href="#">
+                                Log in
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        {% include 'app/module/_login/_login.html' %}
+
+    </main>
+    {% include 'app/module/_footer/_footer.html' %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
